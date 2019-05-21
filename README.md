@@ -1,2 +1,2 @@
-# React_battleship
+# React_Battleship
 Battleship game using ReactJS
