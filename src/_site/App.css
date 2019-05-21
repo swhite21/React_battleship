@@ -1,0 +1,188 @@
+.App {
+  text-align: center;
+
+}
+.player-menu{
+}
+.boat-btn{
+  margin: 5px;
+}
+#out-of-bounds{
+  position: absolute;
+  margin: 400px;
+}
+#board{
+  font-family: 'Passion One';
+  font-size: 25px;
+display:flex;
+flex-wrap: wrap;
+  margin: auto;
+  margin-top: 2%;
+width: 600px;
+}
+.App{
+height: 100vh;
+}
+.stats{
+  font-size: 18px;
+}
+.single-square{
+  background: #94aace;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-style: solid;
+  border-radius: 5px;
+}
+#single-square:hover{
+background: #94cace;
+}
+.powerup{
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+#winner-box{
+  margin-top: 20%;
+  font-size: 50px;
+  position: absolute;
+  justify-content: center;
+  left:0;
+  right:0;
+  max-width:600px;
+  margin-right: auto;
+  margin-left:auto;
+  border-radius: 1em;
+}
+
+.player-stats{
+margin-top: 10%;
+}
+.player-title{
+font-size: 40px;
+}
+#proceed-to-battle{
+  margin-top: 40px;
+  font-size: 30px;
+  animation-name: start-screen-animate;
+  animation-duration: 3s;
+   animation-iteration-count: infinite;
+}
+.board-bg{
+  background-color: #050440;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%2349434b' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%234d5357'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+height: 100vh;
+overflow: hidden;
+}
+#sub-btn{
+  margin-left:10px;
+}
+#in-game-menu{
+  font-family: 'Passion One';
+  font-size: 20px;
+  background: white;
+  float: left;
+  height: 100vh;
+  padding: 20px;
+}
+.start-screen-bg{
+  background-color: #cacaca;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23aebcc4' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%2392aebd' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%2376a1b7' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%235a93b0' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%233e85aa' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+  height: 100vh;
+
+    margin-top: 5%;
+    transition: width 2s;
+
+}
+.start-screen-bg:hover{
+  height: 100vh;
+    margin-top: 5%;
+    opacity: 0%;
+   transition: opacity 2s;
+}
+#player1-menu{
+  background: white;
+  float: left;
+  height: 100vh;
+}
+#player2-menu{
+  background: white;
+  float: right;
+
+}
+#battle-menu{
+  height:100vh;
+  top: 20px;
+}
+
+
+.titles{
+  font-size: 28px;
+  font-family: 'Passion One';
+}
+.App{
+  margin: 0%;
+  padding: 0px;
+  overflow: hidden;
+
+}
+body{
+  background: black;
+  font-family: 'Abel';
+}
+.prominent-btn{
+  margin: 5%;
+  font-size: 20px;
+  animation-name: start-screen-animate;
+  animation-duration: 5s;
+   animation-iteration-count: infinite;
+}
+#playagain-btn{
+  font-size: 20px;
+  animation-name: start-screen-animate;
+  animation-duration: 5s;
+   animation-iteration-count: infinite;
+}
+#start-game-btn{
+  font-size: 20px;
+  animation-name: start-screen-animate;
+  animation-duration: 5s;
+   animation-iteration-count: infinite;
+}
+#hero-title{
+  padding-top: 1em;
+  font-size: 175px;
+  font-family: 'Passion One';
+}
+
+#How-to-container{
+  font-size: 20px;
+  margin: auto;
+  margin-top: 5%;
+  border-radius: 1em;
+  max-width: 900px;
+  delay: 5s;
+  animation-name: fade-in;
+  animation-duration: 4s;
+}
+@keyframes fade-in{
+
+}
+#place-ships-popup{
+  margin: auto;
+  margin-top: 5%;
+  max-width: 600px;
+  border-radius: 1em;
+}
+@keyframes start-screen-animate{
+  0% { transform: scale(1); }
+    30% { transform: scale(1); }
+    40% { transform: scale(1.08); }
+    50% { transform: scale(1); }
+    60% { transform: scale(1); }
+    70% { transform: scale(1.05); }
+    80% { transform: scale(1); }
+    100% { transform: scale(1); }
+}
